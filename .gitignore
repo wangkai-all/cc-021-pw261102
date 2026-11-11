@@ -1,9 +1,22 @@
-
+# 环境与密钥
 .env
 .env.*
 !.env.example
-node_modules/
 .venv/
+node_modules/
 __pycache__/
 .claude/
 .cc-workbench/
+.pytest_cache/
+*.egg-info/
+
+# 前端构建产物与本地缓存
+frontend/dist/
+frontend/.npm-cache/
+*.tsbuildinfo
+
+# 运行时数据（工作簿上传与 DuckDB 库文件）
+data/uploads/*
+data/duckdb/*
+!data/uploads/.gitkeep
+!data/duckdb/.gitkeep
